@@ -1,13 +1,21 @@
 {
 	"compilerOptions": {
+		"baseUrl": "./",
+		"lib": [
+			"ES2020"
+		],
 		"module": "commonjs",
-		"target": "ES2020",
-		"lib": ["ES2020"],
-		"sourceMap": true,
-		"rootDir": "src",
-		"strict": true,
-		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
-		"noUnusedParameters": true
-	}
+		"noImplicitReturns": true,
+		"noUnusedParameters": true,
+		"outDir": "Target",
+		"rootDir": "src",
+		"sourceMap": true,
+		"strict": true,
+		"target": "ES2020"
+	},
+	"extends": "@playform/build/tsconfig",
+	"include": [
+		"src"
+	]
 }
